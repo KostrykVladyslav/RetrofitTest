@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_shape">
+
+    <TextView
+        android:id="@+id/textId"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textUserId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10sp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textUserId"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/textUserId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="100dp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="100sp"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/textId"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="100sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
